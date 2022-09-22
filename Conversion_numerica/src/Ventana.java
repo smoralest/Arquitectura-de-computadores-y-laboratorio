@@ -58,6 +58,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         BtnLimpiar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Conversion de bases");
@@ -168,7 +169,7 @@ public class Ventana extends javax.swing.JFrame {
 
         BtnHexaOct.setBackground(new java.awt.Color(86, 63, 27));
         BtnHexaOct.setFont(new java.awt.Font("UD Digi Kyokasho N-R", 2, 14)); // NOI18N
-        BtnHexaOct.setText("Hexadeciamla octal");
+        BtnHexaOct.setText("Hexadeciaml a octal");
         BtnHexaOct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnHexaOctActionPerformed(evt);
@@ -193,6 +194,10 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("UD Digi Kyokasho N-R", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("<html>Integrantes:<p><p> Sebastian Morales Tarapues   20182020039<p><p> Brayan Alejandro Riveros Rodríguez   20201020084<p><p> Guillermo Steven Cuesta Castellanos   20192020102<p><p> Jersson Javier Ortegate Banderas   20201020139<hmtl>");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -204,10 +209,9 @@ public class Ventana extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(TxtResult)
-                                .addComponent(Txtcampo)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(Txtcampo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 808, Short.MAX_VALUE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(BtnDecaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(BtnDecaOct, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -218,116 +222,259 @@ public class Ventana extends javax.swing.JFrame {
                                         .addComponent(BtnBinaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(BtnBinaHex, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGap(34, 34, 34)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(BtnOctaDec, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(BtnOctaBin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(BtnOctaHex, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(BtnOctaDec, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(BtnOctaHex, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(BtnOctaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(27, 27, 27)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(BtnHexaDec, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(BtnHexaBin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(BtnHexaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                        .addComponent(BtnHexaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(TxtResult, javax.swing.GroupLayout.Alignment.LEADING))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(309, 309, 309)
                         .addComponent(BtnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(34, 34, 34))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Txtcampo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TxtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(BtnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(BtnOctaDec, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(BtnHexaDec, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(BntBinaDec, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnDecaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Txtcampo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TxtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BtnDecaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BntBinaDec, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnOctaDec, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnHexaDec, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(17, 17, 17))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnHexaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BtnOctaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBinaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnDecaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnHexaBin, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(BtnHexaOct, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnDecaHex, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnBinaHex, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnOctaHex, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28))
+                    .addComponent(BtnBinaOct, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnDecaOct, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnDecaHex, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnBinaHex, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnOctaHex, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnHexaOct, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void BtnDecaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDecaBinActionPerformed
-        try {
-            dec = Integer.parseInt(Txtcampo.getText());
-            binarioResultante = con.decimalABinario(dec);
-            TxtResult.setText(binarioResultante);
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es decimal"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-        
-        
-    }//GEN-LAST:event_BtnDecaBinActionPerformed
-
-    private void BtnOctaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaBinActionPerformed
-        try {
-            oct = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarOctal(oct)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
-                         +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.octalADecimal(oct);
-                binarioResultante = con.decimalABinario(dec);
-                TxtResult.setText(binarioResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
-                    +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnOctaBinActionPerformed
 
     private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
         TxtResult.setText("");
         Txtcampo.setText("");
     }//GEN-LAST:event_BtnLimpiarActionPerformed
 
-    private void BtnDecaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDecaOctActionPerformed
+    private void BtnHexaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaOctActionPerformed
         try {
-            dec = Integer.parseInt(Txtcampo.getText());
-            octalResultante = con.decimalAOctal(dec);
-            TxtResult.setText(octalResultante);
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es decimal"
+            hex = Txtcampo.getText().toUpperCase();
+            if (!val.validarHexadecimal(hex)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                    +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                    +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
                     ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.hexadecimalADecimal(hex);
+                octalResultante = con.decimalAOctal(dec);
+                TxtResult.setText(octalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_BtnDecaOctActionPerformed
+    }//GEN-LAST:event_BtnHexaOctActionPerformed
+
+    private void BtnHexaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaBinActionPerformed
+        try {
+            hex = Txtcampo.getText().toUpperCase();
+            if (!val.validarHexadecimal(hex)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                    +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                    +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.hexadecimalADecimal(hex);
+                binarioResultante = con.decimalABinario(dec);
+                TxtResult.setText(binarioResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnHexaBinActionPerformed
+
+    private void BtnHexaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaDecActionPerformed
+        try {
+            hex = Txtcampo.getText().toUpperCase();
+            if (!val.validarHexadecimal(hex)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                    +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                    +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.hexadecimalADecimal(hex);
+                decimalResultante = String.valueOf(dec);
+                TxtResult.setText(decimalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
+                +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
+                +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }// TODO add your handling code here:
+    }//GEN-LAST:event_BtnHexaDecActionPerformed
+
+    private void BtnOctaHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaHexActionPerformed
+        try {
+            oct = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarOctal(oct)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
+                    +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.octalADecimal(oct);
+                hexadecimalResultante = con.decimalAHexadecimal(dec);
+                TxtResult.setText(hexadecimalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnOctaHexActionPerformed
+
+    private void BtnOctaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaBinActionPerformed
+        try {
+            oct = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarOctal(oct)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
+                    +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.octalADecimal(oct);
+                binarioResultante = con.decimalABinario(dec);
+                TxtResult.setText(binarioResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnOctaBinActionPerformed
+
+    private void BtnOctaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaDecActionPerformed
+        try {
+            oct = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarOctal(oct)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
+                    +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.octalADecimal(oct);
+                octalResultante = String.valueOf(dec);
+                TxtResult.setText(octalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnOctaDecActionPerformed
+
+    private void BtnBinaHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBinaHexActionPerformed
+        try {
+            bin = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarBinario(bin)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
+                    +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.binarioADecimal(bin);
+                hexadecimalResultante = con.decimalAHexadecimal(dec);
+                TxtResult.setText(hexadecimalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnBinaHexActionPerformed
+
+    private void BtnBinaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBinaOctActionPerformed
+        try {
+            bin = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarBinario(bin)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
+                    +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                dec = con.binarioADecimal(bin);
+                octalResultante = con.decimalAOctal(dec);
+                TxtResult.setText(octalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnBinaOctActionPerformed
+
+    private void BntBinaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BntBinaDecActionPerformed
+        try {
+            bin = Integer.parseInt(Txtcampo.getText());
+            if (!val.validarBinario(bin)) {
+                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
+                    +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            }else{
+                decimalResultante = String.valueOf(con.binarioADecimal(bin));
+                TxtResult.setText(decimalResultante);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
+                +"\n"+"Recuerda los binarios son escritos con 1 y 0"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BntBinaDecActionPerformed
 
     private void BtnDecaHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDecaHexActionPerformed
         try {
@@ -336,167 +483,33 @@ public class Ventana extends javax.swing.JFrame {
             TxtResult.setText(hexadecimalResultante);
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(null,"El valor que desea convertir no es decimal"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
         }
-         // TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_BtnDecaHexActionPerformed
 
-    private void BntBinaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BntBinaDecActionPerformed
+    private void BtnDecaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDecaOctActionPerformed
         try {
-            bin = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarBinario(bin)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
-                        +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                decimalResultante = String.valueOf(con.binarioADecimal(bin));
-                TxtResult.setText(decimalResultante);
-            }
+            dec = Integer.parseInt(Txtcampo.getText());
+            octalResultante = con.decimalAOctal(dec);
+            TxtResult.setText(octalResultante);
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
-                     +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es decimal"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_BntBinaDecActionPerformed
+    }//GEN-LAST:event_BtnDecaOctActionPerformed
 
-    private void BtnBinaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBinaOctActionPerformed
+    private void BtnDecaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDecaBinActionPerformed
         try {
-            bin = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarBinario(bin)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
-                        +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.binarioADecimal(bin);
-                octalResultante = con.decimalAOctal(dec);
-                TxtResult.setText(octalResultante);
-            }
+            dec = Integer.parseInt(Txtcampo.getText());
+            binarioResultante = con.decimalABinario(dec);
+            TxtResult.setText(binarioResultante);
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres" 
-                    +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es decimal"
+                ,"Validación",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_BtnBinaOctActionPerformed
 
-    private void BtnBinaHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBinaHexActionPerformed
-         try {
-            bin = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarBinario(bin)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un binario"
-                        +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.binarioADecimal(bin);
-                hexadecimalResultante = con.decimalAHexadecimal(dec);
-                TxtResult.setText(hexadecimalResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
-                     +"\n"+"Recuerda los binarios son escritos con 1 y 0"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnBinaHexActionPerformed
-
-    private void BtnOctaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaDecActionPerformed
-            try {
-            oct = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarOctal(oct)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
-                         +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.octalADecimal(oct);
-                octalResultante = String.valueOf(dec);
-                TxtResult.setText(octalResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
-                    +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnOctaDecActionPerformed
-
-    private void BtnOctaHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOctaHexActionPerformed
-        try {
-            oct = Integer.parseInt(Txtcampo.getText());
-            if (!val.validarOctal(oct)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un octal"
-                         +"\n"+"Recuerda los octales usan 8 dígitos:"+"\n"+" (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.octalADecimal(oct);
-                hexadecimalResultante = con.decimalAHexadecimal(dec);
-                TxtResult.setText(hexadecimalResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea ingresar presenta caracteres"
-                    +"\n"+"Recuerda los octales usan 8 dígitos (0, 1, 2, 3, 4, 5, 6, 7)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnOctaHexActionPerformed
-
-    private void BtnHexaDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaDecActionPerformed
-        try {
-            hex = Txtcampo.getText().toUpperCase();
-            if (!val.validarHexadecimal(hex)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.hexadecimalADecimal(hex);
-                decimalResultante = String.valueOf(dec);
-                TxtResult.setText(decimalResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }// TODO add your handling code here:
-    }//GEN-LAST:event_BtnHexaDecActionPerformed
-
-    private void BtnHexaBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaBinActionPerformed
-        try {
-            hex = Txtcampo.getText().toUpperCase();
-            if (!val.validarHexadecimal(hex)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.hexadecimalADecimal(hex);
-                binarioResultante = con.decimalABinario(dec);
-                TxtResult.setText(binarioResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnHexaBinActionPerformed
-
-    private void BtnHexaOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHexaOctActionPerformed
-        try {
-            hex = Txtcampo.getText().toUpperCase();
-            if (!val.validarHexadecimal(hex)) {
-                JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-                }else{
-                dec = con.hexadecimalADecimal(hex);
-                octalResultante = con.decimalAOctal(dec);
-                TxtResult.setText(octalResultante);
-            }
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null,"El valor que desea convertir no es un hexadecimal"
-                         +"\n"+"Recuerda los hexadecimales usan 16 símbolos:"
-                        +"\n"+" (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"+"\n"+"(A ,B ,C ,D ,E ,F)"
-                    ,"Validación",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_BtnHexaOctActionPerformed
+    }//GEN-LAST:event_BtnDecaBinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -551,6 +564,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JTextField Txtcampo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
